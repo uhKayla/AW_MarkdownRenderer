@@ -91,7 +91,8 @@ namespace UIMarkdownRenderer
         {
             if (s_DefaultStylesheet == null)
             {
-                s_DefaultStylesheet =  AssetDatabase.LoadAssetAtPath("Packages/com.rtl.markdownrenderer/Styles/MarkdownRenderer.uss", typeof(StyleSheet)) as StyleSheet;
+                var guid_DefaultStyleSheet = AssetDatabase.GUIDToAssetPath("7632f1d9e17502a42a22c7403999b2c7");
+                s_DefaultStylesheet =  AssetDatabase.LoadAssetAtPath(guid_DefaultStyleSheet, typeof(StyleSheet)) as StyleSheet;
             
                 if(s_DefaultStylesheet == null)
                     Debug.LogError("Couldn't load the MarkdownRenderer.uss stylesheet");
