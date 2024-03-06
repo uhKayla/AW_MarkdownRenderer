@@ -87,7 +87,7 @@ namespace UIMarkdownRenderer
             return this;
         }
 
-        public static VisualElement GenerateVisualElement(string markdownText,  Action<string> LinkHandler, bool includeScrollview = true, string filePath = "")
+        public static VisualElement GenerateVisualElement(string markdownText,  Action<string> LinkHandler, bool includeScrollview = true)
         {
             if (s_DefaultStylesheet == null)
             {
@@ -105,8 +105,8 @@ namespace UIMarkdownRenderer
             }
 
             s_StaticRenderer.m_CurrentLinkHandler = LinkHandler;
-            s_StaticRenderer.m_LocalFilePath = Path.GetDirectoryName(filePath);
-            s_StaticRenderer.m_FileFolder = Path.GetFullPath(s_StaticRenderer.m_LocalFilePath);
+            // s_StaticRenderer.m_LocalFilePath = Path.GetDirectoryName(filePath);
+            // s_StaticRenderer.m_FileFolder = Path.GetFullPath(s_StaticRenderer.m_LocalFilePath);
             s_StaticRenderer.m_CustomStylesheets = new List<StyleSheet>();
             
             s_StaticRenderer.m_HeadersToLabelMappings.Clear();

@@ -76,7 +76,7 @@ namespace UIMarkdownRenderer
         void Setup()
         { 
             rootVisualElement.Clear();
-            rootVisualElement.Add(UIMarkdownRenderer.GenerateVisualElement(File.ReadAllText(m_Path), lnk => HandleLink(lnk, m_Path), true, m_Path));
+            rootVisualElement.Add(UIMarkdownRenderer.GenerateVisualElement(File.ReadAllText(m_Path), lnk => HandleLink(lnk, m_Path), true));
         }
 
         public static void HandleLink(string link, string filePath)

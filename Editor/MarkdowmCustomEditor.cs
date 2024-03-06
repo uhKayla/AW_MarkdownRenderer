@@ -32,7 +32,7 @@ namespace UIMarkdownRenderer
         {
             if (m_IsMDFile)
             {
-                return UIMarkdownRenderer.GenerateVisualElement(File.ReadAllText(m_TargetPath), lnk => MarkdownViewer.HandleLink(lnk, m_TargetPath), true, m_TargetPath);
+                return UIMarkdownRenderer.GenerateVisualElement(File.ReadAllText(m_TargetPath), lnk => MarkdownViewer.HandleLink(lnk, m_TargetPath), true);
             }
 
             var elem = new IMGUIContainer(m_DefaultEditor.OnInspectorGUI);
