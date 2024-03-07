@@ -1,9 +1,7 @@
 {
-	"name": "com.angelware.markdownrenderer",
-	"displayName":"Markdown Renderer",
-	"version": "1.1.1",
-	"unity": "2021.3",
-	"description": "Add a markdown renderer to render markdown file as UIElements. ANGELWARE Fork.",
-	"dependencies": {
-	}
+  "name": "com.angelware.markdownrenderer",
+  "displayName": "AW_MarkdownRenderer",
+  "version": "1.1.1",
+  "unity": "2021.3",
+  "description": "Add a markdown renderer to render markdown file as UIElements. ANGELWARE Fork."
 }
